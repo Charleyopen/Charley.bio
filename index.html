@@ -1,24 +1,93 @@
-   <!DOCTYPE html>
-   <html lang="zh-CN">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>我的个人网页</title>
-       <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-       <header>
-           <h1>欢迎来到我的网页</h1>
-       </header>
-       <main>
-           <section>
-               <h2>关于我</h2>
-               <p>这里是关于我的简介。</p>
-           </section>
-       </main>
-       <footer>
-           <p>&copy; 2024 我的名字</p>
-       </footer>
-       <script src="script.js"></script>
-   </body>
-   </html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charley's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <img src="images/Charley_photograph2.png" alt="Charley's Photo" class="profile-photo">
+                <h2>唐畅 Charley</h2>
+                <p>硅谷创业公司CEO，前百亿双币私募投资经理，前普华永道投融资并购部及战略咨询部高级顾问，前字节跳动大模型团队成员，全栈独立开发者，业余自媒体健身博主。</p>
+                <p class="signature">"这次大模型编程的浪潮，我终于必须再一次喊出那句'Hello World'!"</p>
+            </div>
+            <div class="contact">
+                <h3>联系方式</h3>
+                <p>电话: 19906051198</p>
+                <p>微信: tc79823269</p>
+                <p>邮箱: charleyt613@gmail.com</p>
+                <p>商务: augustc@yeah.net</p>
+                <p>飞书: <a href="https://www.feishu.cn/invitation/page/add_contact/?token=353p51dd-9d92-49bf-a42b-0e295ff67ef2" target="_blank"> 唐畅 Charley</a></p>
+                <p>领英: <a href="https://www.linkedin.com/in/chang-charley-tang-436992155/" target="_blank">LinkedIn</a></p>
+                <p>Github: <a href="https://github.com/Charleyopen" target="_blank"> Charleyopen</a></p>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <div class="interactive-buttons">
+                    <button class="interactive-btn" data-section="home">首页</button>
+                    <button class="interactive-btn" data-section="work">工作</button>
+                    <button class="interactive-btn" data-section="life">生活</button>
+                    <button class="interactive-btn" data-section="cooperation">合作</button>
+                    <button class="interactive-btn" data-section="blog">博客</button>
+                </div>
+                <h1>Welcome to Charley's Website</h1>
+            </header>
+            <div id="home">
+                <section id="experience">
+                    <h2>我的经历</h2>
+                    <p><strong>字节跳动</strong></p>				                                                                                        
+                        <p>大模型国内外最新论文技术追踪，竞品动态、市场投资情况、细分领域趋势调研，访谈大量国内外大模型公司高管及技术人员，其中根据公开资料整理制作的独著专栏供内部大模型团队千人阅读；</p>
+                        <p>大模型测评集构建，包括人工和自动评估集的设计、跑通、迭代，输出包括基座大模型、豆包、扣子等原子能力和端到端表现指标；</p>
+                        <p>负责字节跳动大模型的部分评测业务，制作字节内部和竞品的大模型排行榜，供公司管理层阅读以了解大模型能力的真实竞争格局；</p>
+                    <p><strong>弘卓资本</strong></p>
+                    <p> 发掘AI硬科技赛道投资标的，独立制作项目投资建议书并通过投决会，参与交易流程中的尽调协调等工作，已完成千万级别投资；</p> 
+                    <p> 负责两支美元基金及专项基金的投后管理工作，包括对接超过30个项目方的管理层，定期出具基金业绩净值报告与项目进展报告等；</p> 
+                    <p> 各行业深度研究，与被投企业交流，提供LP投资意见与维护LP关系，协助IR募资活动，协助运营合规与基金审计等相关工作；</p> 
+                    <p><strong>普华永道</strong></p>
+                    <p> 在普华永道投融资并购部担任高级顾问，参与多个企业的商业计划书制作、市场测试、金融模型搭建、管理层访谈、项目协调沟通，行业情况调研等，主要参与科技信息行业、医疗行业的卖方项目；</p> 
+                    <p> 普华永道思略特管理咨询对淡马锡控股集团投资标的筛选项目，独立撰写行业研报，访谈相关行业头部企业管理层22家，制作公司企业投资分析报告，为华润、华为等多家500强企业提供战略咨询服务；</p> 
+                    <p> 风险及控制服务部、税务及审计鉴证部门 ，为中信银行、小米集团、甲骨文、高盛高华、国电投等多家企业提供审计、税务、风险控制、内控合规等服务；</p> 
+                </section>
+                <section id="current-work">
+                    <h2>我最近在做的事</h2>
+                    <p>*  独立开发大模型适配PMF的5款应用MVP</p>
+                    <p>*  学习大模型算法层和基础层的最新知识</p>
+                    <p>*  持续进行健身和饮食管理</p>
+                    <p>*  学习第六门外语</p>
+                </section>
+                <section id="works">
+                    <h2>我的作品</h2>
+                    <p>代表作品<br>1.编程类：后端实现作品|前端设计作品|算法优化作品|机器学习和大模型项目|数据分析工程实战<br>2. 研报类：行业报告|公司研究报告|基金研究报告|投资分析报告<br>3. 自媒体：公众号|视频号|小红书|抖音|B站</p>
+                </section>
+            </div>
+            <section id="work" style="display: none;">
+                <h2>工作</h2>
+                <p>正在建设中，敬请期待！</p>
+            </section>
+            <section id="life" style="display: none;">
+                <h2>生活</h2>
+                <p>正在建设中，敬请期待！</p>
+            </section>
+            <section id="cooperation" style="display: none;">
+                <h2>合作</h2>
+                <p>正在建设中，敬请期待！</p>
+            </section>
+            <section id="blog" style="display: none;">
+                <h2>博客</h2>
+                <p>正在建设中，敬请期待！</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 唐畅 Charley All rights reserved</p>
+    </footer>
+    <script src="interact.js"></script>
+</body>
+</html>
