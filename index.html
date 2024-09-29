@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Charley's Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -32,11 +32,14 @@
         <main>
             <header>
                 <div class="interactive-buttons">
-                    <button class="interactive-btn" data-section="home">首页</button>
-                    <button class="interactive-btn" data-section="work">工作</button>
-                    <button class="interactive-btn" data-section="life">生活</button>
-                    <button class="interactive-btn" data-section="cooperation">合作</button>
-                    <button class="interactive-btn" data-section="blog">博客</button>
+                    <div class="nav-buttons">
+                        <button class="interactive-btn" data-section="home">首页</button>
+                        <button class="interactive-btn" data-section="work">工作</button>
+                        <button class="interactive-btn" data-section="life">生活</button>
+                        <button class="interactive-btn" data-section="cooperation">合作</button>
+                        <button class="interactive-btn" data-section="blog">博客</button>
+                    </div>  
+                    <button id="lang-switch" class="interactive-btn">中/英</button>
                 </div>
                 <h1>Welcome to Charley's Website</h1>
             </header>
@@ -44,28 +47,22 @@
                 <section id="experience">
                     <h2>我的经历</h2>
                     <p><strong>字节跳动</strong></p>				                                                                                        
-                        <p>大模型国内外最新论文技术追踪，竞品动态、市场投资情况、细分领域趋势调研，访谈大量国内外大模型公司高管及技术人员，其中根据公开资料整理制作的独著专栏供内部大模型团队千人阅读；</p>
-                        <p>大模型测评集构建，包括人工和自动评估集的设计、跑通、迭代，输出包括基座大模型、豆包、扣子等原子能力和端到端表现指标；</p>
-                        <p>负责字节跳动大模型的部分评测业务，制作字节内部和竞品的大模型排行榜，供公司管理层阅读以了解大模型能力的真实竞争格局；</p>
+                        <p>在字节跳动豆包大模型团队对大模型的技术、产品、玩家、趋势进行深度调研，打通国内外产学研专家信息壁垒，产出调研报告和独家专栏，从零到一带队构建字节大模型Agent应用评测集合。在字节跳动工作，收获满满。这里有充满活力与创新的工作氛围，激励着你不断挑战自我。与优秀的同事们并肩作战，拓宽了专业视野，提升了技术能力。字节跳动还提供丰富的学习资源，让你持续成长。高效的工作流程和先进的管理理念，培养了良好的职业习惯。同时，公司对员工的关怀也让人倍感温暖，增强了归属感。在这里，每一天都是新的挑战与机遇，为未来的职业发展奠定了坚实基础，让人充满成就感与期待。</p>
                     <p><strong>弘卓资本</strong></p>
-                    <p> 发掘AI硬科技赛道投资标的，独立制作项目投资建议书并通过投决会，参与交易流程中的尽调协调等工作，已完成千万级别投资；</p> 
-                    <p> 负责两支美元基金及专项基金的投后管理工作，包括对接超过30个项目方的管理层，定期出具基金业绩净值报告与项目进展报告等；</p> 
-                    <p> 各行业深度研究，与被投企业交流，提供LP投资意见与维护LP关系，协助IR募资活动，协助运营合规与基金审计等相关工作；</p> 
+                    <p> 主要投资AI大模型赛道标的，国内与国内头部AI企业创业者保持联系，独立负责发掘、上会、尽调全流程及十余支基金数十家企业的投后工作，已完成千万级别投资；在私募基金工作，收获众多。深入了解金融市场的复杂与多变，锻炼了敏锐的洞察力。参与各类项目分析与决策，极大地提升了财务分析和风险评估能力。与专业的投资团队合作，学习到先进的投资理念和策略。同时，在高压的工作环境下，培养了强大的抗压能力和高效的工作习惯。这份工作不仅丰富了我的专业知识，还拓宽了职业视野，为未来在金融领域的发展奠定了坚实基础，让我对金融行业有了更深刻的认识和热爱。</p> 
                     <p><strong>普华永道</strong></p>
-                    <p> 在普华永道投融资并购部担任高级顾问，参与多个企业的商业计划书制作、市场测试、金融模型搭建、管理层访谈、项目协调沟通，行业情况调研等，主要参与科技信息行业、医疗行业的卖方项目；</p> 
-                    <p> 普华永道思略特管理咨询对淡马锡控股集团投资标的筛选项目，独立撰写行业研报，访谈相关行业头部企业管理层22家，制作公司企业投资分析报告，为华润、华为等多家500强企业提供战略咨询服务；</p> 
-                    <p> 风险及控制服务部、税务及审计鉴证部门 ，为中信银行、小米集团、甲骨文、高盛高华、国电投等多家企业提供审计、税务、风险控制、内控合规等服务；</p> 
+                    <p> 在普华永道投融资并购部担任高级顾问，独立负责项目全流程，为超过一百家500强企业提供投融资并购、战略咨询、风险控制咨询等不同种类的专业服务；在普华永道工作，收获满满。接触到众多行业的顶尖企业，拓宽了视野格局。专业的团队和严谨的工作流程，提升了我的专业技能和职业素养。高强度的项目锻炼了我的抗压能力和时间管理能力。与优秀的同事合作，从他们身上学到不同的思维方式和工作方法。普华永道还提供丰富的培训资源，助力个人持续成长。在这里，我不仅积累了宝贵的工作经验，更明确了自己的职业发展方向，为未来的职业生涯打下了坚实的基础。</p> 
                 </section>
                 <section id="current-work">
-                    <h2>我最近在做的事</h2>
-                    <p>*  独立开发大模型适配PMF的5款应用MVP</p>
-                    <p>*  学习大模型算法层和基础层的最新知识</p>
-                    <p>*  持续进行健身和饮食管理</p>
-                    <p>*  学习第六门外语</p>
+                    <h2>最近在做的事</h2>
+                    <p>深度思考大模型产品的PMF,以及产品的MVP</p>
+                    <p>使用大模型算法层和基础层的最新知识，独立开发出自己的AI应用</p>
+                    <p>使用AI辅助自己创业, 找到创业的人和资金</p>
+                    <p>梳理技能和能力边界，克服旧习惯，打造个人知识库和能力树，建立提效飞轮</p>
                 </section>
                 <section id="works">
                     <h2>我的作品</h2>
-                    <p>代表作品<br>1.编程类：后端实现作品|前端设计作品|算法优化作品|机器学习和大模型项目|数据分析工程实战<br>2. 研报类：行业报告|公司研究报告|基金研究报告|投资分析报告<br>3. 自媒体：公众号|视频号|小红书|抖音|B站</p>
+                    <p>1.编程类：后端实现作品|前端设计作品|算法优化作品|机器学习和大模型项目|数据分析工程实战<br>2. 研报类：行业报告|公司研究报告|基金研究报告|投资分析报告<br>3. 自媒体：公众号|视频号|小红书|抖音|B站</p>
                 </section>
             </div>
             <section id="work" style="display: none;">

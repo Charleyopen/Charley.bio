@@ -17,7 +17,16 @@ body {
     top: 1rem;
     right: 2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: calc(100% - 4rem);
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+#lang-switch {
+    margin-left: auto;
 }
 
 .interactive-btn {
@@ -32,7 +41,7 @@ body {
     font-size: 0.9rem;
 }
 
-.interactive-btn:hover {
+.interactive-btn:hover, #lang-switch:hover {
     background-color:#3c33a3;
     color: white;
 }
@@ -78,6 +87,7 @@ main {
     padding: 2rem;
     width: calc(100% - 300px); /* 设置主内容区域的宽度 */
     position: relative;
+    box-sizing: border-box;
 }
 
 header {
@@ -96,9 +106,10 @@ h1 {
 
 section {
     background-color: #3c3c3c;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
 }
 
 h2 {
@@ -148,7 +159,75 @@ a:hover {
     50% { opacity: 1; transform: scale(1); }
     100% { opacity: 0; transform: scale(0.5); }
 }
-
+/*
 main {
-    background-color: rgba(56, 55, 55, 0.048); /* 添加半透明背景 */
+    background-color: rgba(56, 55, 55, 0.048); /* 添加半透明背景 
+    padding: 2rem;
+    box-sizing: border-box;
 }
+*/
+/* 添加媒体查询 */
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    footer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #stars-container {
+        width: 100%;
+    }
+
+    .interactive-buttons {
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+    #lang-switch {
+        margin-left: 0.5rem;
+    }
+    /*
+    .interactive-btn {
+        background-color: transparent;
+        color: #ced7e0;
+        border: 1px solid transparent;
+        padding: 5px 15px;
+        margin: 0.25rem;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }*/
+
+@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {}
+
+
